@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra U1 Lesson 7 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --font-one: 'Montserrat', sans-serif;
+            --font-two: 'Arvo', serif;
+        }
+        body {
+            font-family: var(--font-one);
+            font-size: 16px;
+            font-weight: 400;
+            background: #404040;
+            background-size: cover;
+        }   
+       /* h1, h2, h3, h4, h5, h6{
+            font-family: var(--font-two);
+        }
+
+        h1,
+        h2 {
+            font-weight: 700;
+        } */
+
+        /* top_content */
+        #setion1 {
+            /* background: url(https://lh3.googleusercontent.com/u/1/drive-viewer/AAOQEORCl82RXmNWT5PE7ib78BtwgFHuuHPbk9ywcS0FQBQMKexel6bNFD0rD047IMuBb6V6h3eOxyHBvliO_YXyhMFtjYU8=w1920-h483) no-repeat; */
+            background-color: #FEC602;
+        }
+
+        #top_content_one {
+            background: url('./ALG1S1U1L7Header.png') no-repeat;
+            background-size: cover;
+            background-position: left;
+            padding:80px;
+            box-shadow: -1px -8px 13px #8a4c5775;
+            -webkit-box-shadow: -1px -8px 13px #8a4c5775;
+            -moz-box-shadow: -1px -8px 13px #8a4c5775;
+            -o-box-shadow: -1px -8px 13px #8a4c5775;
+            height: 550px;
+        }
+        #top2_content_one {
+         background-color: #fff;
+         padding: 40px;
+        }
+        #top6_content_one {
+         background-color: #ECECEC;
+         padding: 40px;
+        }
+        #top7_content_one {
+         background-color: #535353;
+         padding: 40px;
+         color:#fff;
+        }
+        .sect1title{
+            font-size: 5.5rem;
+            font-weight: 600;
+            color: black;
+            text-align: right;
+            font-family: var(--font-two);
+        }
+        .sect1subtitle{
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: right;
+       }
+       .sectitle{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+       }
+       .secsubtitle{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+       }
+       .textcontent{
+        font-size: 1rem;
+       }
+       .bgdark{
+        background-color:#494848;
+        padding:15px;
+        color: #fff;
+        text-align: center;
+       }
+       .bgdark1{
+        background-color:#7F7F7F;
+        padding:15px;
+        color: #fff;
+        height: 400px;
+       }
+       .bgdark2{
+        background-color:#7F7F7F;
+        padding:15px;
+        color: #000;
+        text-align: center;
+       }
+       .bgdark3{
+        background-color:#A5A5A5;
+        padding:15px;
+        color: #000;
+        height: 400px;
+       }
+       .bgdark4{
+        background-color:#A5A5A5;
+        padding:15px;
+        color: #000;
+        text-align: center;
+       }
+       .bgdark5{
+        background-color:#C0C0C0;
+        padding:15px;
+        color: #000;
+        text-align: center;
+        height: 400px;
+       }
+       .bgred{
+        background-color:#F93839 !important;
+        padding:15px !important;
+        color: #fff !important;
+        text-align: center !important;
+       }
+       .bggraydark{
+        background-color:#BCBCBC !important;
+        padding:15px !important;
+        color: #000 !important;
+        text-align: center !important;
+        margin: auto;
+       }
+       .bggray{
+        background-color:#CFCFCF !important;
+        padding:15px !important;
+        color: #000 !important;
+        text-align: center !important;
+        margin: auto;
+       }
+       .bggrayligt{
+        background-color:#E1E1E1 !important;
+        padding:15px !important;
+        color: #000 !important;
+        text-align: center !important;
+        margin: auto;
+       }
+        .bg-black{
+            background-color: black;
+        }
+        button[data-qs_count]{
+            border-radius: 0px 50rem 50rem 0px !important;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        button[data-qs_count].glow-on-hover-success{
+            background: #6bc855!important;
+        }
+        button[data-qs_count].glow-on-hover-wrong{
+            background: var(--bs-danger)!important;
+        }
+        span.error_mes{
+            top: -16px;
+            font-size: 11px;
+            left: 19px;
+            z-index: 2;
+        }
+        .practice-1-result {
+        display: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="lesson_7">
+    <!-- section 1 -->
+    <section id="setion1">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top_content_one">
+                    <div class="row mt-5">
+                        <div class="col-lg-12" style="text-align: right;">
+                            <h1><label class="sect1title">ALGEBRA</label></h1>
+                             <label class="sect1subtitle">Adding and Subtracting <br> Monomials</label>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section id="setion2">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <p class="sectitle"> Algebraic Expressions</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="./ALG1S1U1L7Image1.png" width="100%">
+                        </div>
+                        <div class="col-lg-6 mt-5">
+                            <p class="textcontent">Focus on the colored tiles in the graphic to the left. By collecting tiles that have the same shape and color, you can simplify an algebraic expression.</p>
+                            <p class="textcontent">If you cancel out the same shape with opposite signs, your result is a zero pair. The image to your left represents an algebraic expression. If we gather and count the tiles that are "alike" and cancel out the zero pairs, the result is: -3x2+8.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section 3 -->
+    <section id="setion3">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <p class="sectitle"> Adding And Subtracting Monomials</p>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="bgdark">
+                                <label class="secsubtitle">
+                                    What you should <br> know
+                                </label>
+                            </div>
+                            <div class="bgdark1">
+                                <p class="textcontent">
+                                    <b>Before you begin, you should:</b>
+                                </p>
+                                <ul style="list-style: square;">
+                                    <li class="textcontent">Know the definition of additive inverse</li>
+                                    <li class="textcontent">Know how to simplify numerical expressions involving rules of integers</li>
+                                </ul>
+                                <p class="textcontent">
+                                    <b>For a quick review, please revisit these lessons.</b>
+                                </p>
+                                <p class="textcontent">
+                                   Integers and Rationals - Adding and Subtracting
+                                </p>
+                                <p class="textcontent">
+                                  Integers and Rationals - Multiplying and Dividing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="bgdark2">
+                                <label class="secsubtitle">
+                                    Lesson <br> Expectations
+                                </label>
+                            </div>
+                            <div class="bgdark3">
+                                <p class="textcontent">
+                                    <b>By the end of this lesson, you should be able to:</b>
+                                </p>
+                                <ul style="list-style: square;">
+                                    <li class="textcontent">Simplify algebraic expressions using like terms</li>
+                                    <li class="textcontent">Add and subtract monomials</li>
+                                    <li class="textcontent">Use the distributive property</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="bgdark4">
+                                <label class="secsubtitle">
+                                    Lesson <br> Keywords
+                                </label>
+                            </div>
+                            <div class="bgdark5">
+                                <p class="textcontent">
+                                    <b>Binomial</b>
+                                </p>
+                                <p class="textcontent">
+                                    <b>Coefficient</b>
+                                </p>
+                                <p class="textcontent">
+                                    <b>Like terms</b>
+                                </p>
+                                <p class="textcontent">
+                                    <b>Monomial</b>
+                                </p>
+                                <p class="textcontent">
+                                    <b>Term</b>
+                                </p>
+                                <p class="textcontent">
+                                    <b>Trinomial</b>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!-- section 4 -->
+    <section id="setion4">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <p class="sectitle"> Distributive Property</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="./ALG1S1U1L7Image2.png" width="100%">
+                            <p class="textcontent mt-3 text-center"> Hence, the area of the rectangle is <br>a(b+c)= area 1 + area 2 =ab+ac</p>
+                        </div>
+                        <div class="col-lg-6 mt-5">
+                            <p class="textcontent">The distributive property states that:<br> a(b+c)=ab+ac.</p>
+                            <p class="textcontent">The following demonstrates a visual of this property. A rectangle has a width of a units and a length of (b+c) units. If you find the area of the individual parts, then the sum of those parts is the area of the entire rectangle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!-- section 5 -->
+    <section id="setion5">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <p class="sectitle"> Algebraic Expressions</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="textcontent text-center">Algebraic expressions can have multiple terms.</p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td class="bgred">
+                                            <label class="secsubtitle">
+                                                Number of <br> Terms
+                                            </label>
+                                        </td>
+                                        <td class="bgred">
+                                            <label class="secsubtitle">
+                                                Name
+                                            </label>
+                                        </td>
+                                        <td class="bgred">
+                                            <label class="secsubtitle">
+                                                Example
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bggraydark">
+                                            <p class="textcontent">
+                                                <b>1</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggray">
+                                            <p class="textcontent">
+                                                <b>Monomial</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggrayligt">
+                                            <p class="textcontent">
+                                                7x
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bggraydark">
+                                            <p class="textcontent">
+                                                <b>2</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggray">
+                                            <p class="textcontent">
+                                                <b>Binomial</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggrayligt">
+                                            <p class="textcontent">
+                                                3x + y
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bggraydark">
+                                            <p class="textcontent">
+                                                <b>3</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggray">
+                                            <p class="textcontent">
+                                                <b>Trinomial</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggrayligt">
+                                            <p class="textcontent">
+                                                x<sup>2</sup>+3x+5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bggraydark">
+                                            <p class="textcontent">
+                                                <b>4</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggray">
+                                            <p class="textcontent">
+                                                <b>Polynomial</b>
+                                            </p>
+                                        </td>
+                                        <td class="bggrayligt">
+                                            <p class="textcontent">
+                                                x<sup>3</sup>+2x<sup>2</sup>+3x-5
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="textcontent">
+                                Terms that have the same variables and powers are "like terms" and can be combined to simplify an expression. The numbers in front of the variables are called coefficients, which are used in the operations.
+                            </p>
+                        </div>
+                        <div class="col-lg-12">
+                           <p class="textcontent" style="font-size: 1.3rem;font-weight: 600;"> Example 1</p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                            Simplify 5x<sup>2</sup>-3x+6x<sup>2</sup>+4x-6
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                            5x<sup>2</sup> and 6x<sup>2</sup> have the same variables and powers and are therefore "like terms". Thus they combine to form 11x<sup>2</sup>.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                            -3x and 4x are "like terms" and therefore combine to form 1x, which can be written as just x.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                           -6 is simply a plain integer, and there are no other integers in this expression to which it can combine.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                           Hence, the simplified expression is  11x<sup>2</sup>+x-6
+                           </p>
+                        </div>
+                        <div class="col-lg-12">
+                           <p class="textcontent" style="font-size: 1.3rem;font-weight: 600;"> Example 2 : Use the distributive property and simplify. </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                            Simplify 5(3x<sup>2</sup>-2x)-2(x<sup>2</sup>+3x)
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                            5x<sup>2</sup> and 6x<sup>2</sup> have the same variables and powers and are therefore "like terms". Thus they combine to form 11x<sup>2</sup>.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                           15x<sup>2</sup>-10x-2x<sup>2</sup>-6x Next, distribute and identify <b>"like terms"</b>.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                           15x<sup>2</sup>-2x<sup>2</sup>-10x-6x Next Combine <b>"like terms"</b>.
+                           </p>
+                           <p class="textcontent" style="font-size: 1.3rem">
+                           13x<sup>2</sup>-16x The totally simplified expression.
+                           </p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-lg-12">
+                            <div style="background-color:#BCBCBC ;color:#fff;padding:10px">
+                                <lable><b>Note:</b></lable>
+                            </div>
+                            <div style="background-color:#D0CFD0 ;color:#000;padding:10px">
+                               <p class="textcontent">
+                                When using the distributive property, not only are you multiplying the number in front of the parentheses to each term within the parentheses, but you must ALSO make sure to use the sign of that number.
+                               </p>
+                               <p class="textcontent">
+                                In Example 2 above, we multiplied a positive 5 through the first set of parentheses, but then we multiplied a negative 2 through the second set of parentheses.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 6 -->
+    <section id="setion6">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top6_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <p class="sectitle" style="color:#82967E"> Applications of the skills and concepts </p>
+                             <p class="textcontent text-center">
+                                The following video will demonstrate application type problems in real world scenarios. Pay particular attention to the question format: short response, extended response, drawing models, and justifying and explaining how an answer is obtained.
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-10 offset-lg-1">
+                           <div class="ratio ratio-16x9">
+                            <video class="video-fluid" loop controls>
+                                <source src="Https://m.fyioc.com/Spanish1/Lesson28/L28V1-REV5.mp4" type="video/mp4" />
+                            </video>
+                            <div class="play_button">
+                                <div id="play_vid">
+                                    <span class="material-icons-outlined">play_arrow</span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 7 -->
+    <section id="setion7">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top7_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="sectitle"> Practice</p>
+                            <p class="textcontent text-center">
+                                Now try the problems on the chart below to check your understanding.
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="textcontent text-center">
+                                Practice with Adding & Subtracting Monomials: Distributive Property & Combining Like Terms
+                             </p>
+                            <p class="textcontent text-center">
+                                Drag the correct answer to the corresponding equation:
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="practice-1-result text-center mx-5 p-3 fw-bold justify-content-center align-content-center">Try Again!<span class="material-icons mx-2 fs-1">cancel</span>
+                            </h2>
+                        </div>
+                        <div class="col-lg-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              1.)  5-7x+8x<sup>2</sup>+10x+1+x<sup>2</sup> 
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="6">
+                                                    <label class="textcontent" >
+                                                    -3x -25
+                                                </label>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              2.)  -6x-7x 
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="2">
+                                                <label class="textcontent" >
+                                                    -13x
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%" >
+                                            <label class="textcontent">
+                                              3.)  6(x+9)+9
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="4">
+                                                <label class="textcontent">
+                                                    -7x-10
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              4.) 6x-9x-10-4x
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                             <div class="practice-1-answer" draggable="true" id="1">
+                                                <label class="textcontent">
+                                                    9x<sup>2</sup>-17x+6
+                                                </label>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              5.) 1-4(9x-1)
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="8">
+                                                <label class="textcontent">
+                                                    -10x<sup>2</sup>-6x+3
+                                                </label>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              6.)  -3(x+7)-4
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="3">
+                                                <label class="textcontent">
+                                                    6x+63
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              7.)  2y+9yx+3+yx+6x
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="9">
+                                                <label class="textcontent">
+                                                    5y-5x-2
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              8.)  -9x<sup>2</sup>-6x-2-x<sup>2</sup>+5
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="5">
+                                                <label class="textcontent">
+                                                    -36x+5
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#BCBCBC;width:50%">
+                                            <label class="textcontent">
+                                              9.)  -3y-5x+7y-2+y
+                                            </label>
+                                        </td>
+                                        <td style="background-color: #535353;color:#fff;width:50%" class="answer-container">
+                                            <div class="practice-1-answer" draggable="true" id="7">
+                                                <label class="textcontent">
+                                                    10 yx-2y+6x+3
+                                                </label>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 8 -->
+    <section id="setion8">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top7_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="sectitle"> Summary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <p class="textcontent">
+                            In this lesson, you have covered:
+                          </p>
+                          <ul style="list-style: square;">
+                            <li class="textcontent">That the distributive property states that for any number a, b, and c: a(b + c)= ab + ac.</li>
+                            <li class="textcontent">That algebraic expressions can be monomials (1 term), binomials (2 terms), trinomials(3 terms), or polynomials (4 or more terms).</li>
+                            <li class="textcontent">That expressions with "like terms" have the same variables and exponents and they can be combined by adding and subtracting them.</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section id="setion8">
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top7_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="sectitle"> Assignment</p>
+                             <p class="textcontent text-center">
+                                Adding and subtracting Monomials.
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-10 col-12 offset-lg-1">
+                <div id="top2_content_one">
+                    <div class="row">
+                        <div class="col-lg-12">
+                             <p class="textcontent">
+                                <b>Distributive Property/Combining Like Terms</b>
+                             </p>
+                             <p class="textcontent">
+                                <b>Assessment</b>
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                             <img src="./ALG1S1U1L7Image3.png" width="30%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            1. Find the total area of the figure above.
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer1" data-ans="43w">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="1" id="quiz-answer1btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text1" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-12">
+                            2. Find the perimeter of the figure above.
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer2" data-ans="18w+14">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="2" id="quiz-answer2btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text2" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                             <img src="./ALG1S1U1L7Image4.png" width="40%">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-12">
+                            3. Find the total area of the figure.
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-sm" id="quiz-answer3" data-ans="10x+65">
+                                <button class="btn text-white bg-black ps-2 pe-2" data-error_counter="3" data-qs_count="3" id="quiz-answer3btn" onclick="checkInputs(this)" type="button">Check</button>
+                                <span id="quiz-answer-text3" class="hidden position-absolute error_mes bg-danger ps-1 pe-1 text-white"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		<!-- Assessment Quiz -->
+        <table style="width: 710px; height: auto; margin-left: auto; margin-right: auto;" border="1" cellpadding="20">
+            <tbody>
+            <tr>
+            <td style="background-color: white; width: 710px; ">
+            <b><span style="font-family: arial,helvetica,sans-serif;">&nbsp;  Answer the following questions.</span> </b>
+            <p><a:question index="1" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="2" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="3" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="4" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="5" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="6" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="7" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="8" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="9" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="10" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="11" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="12" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="13" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="14" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="15" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="16" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="17" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="18" /></p> 
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="19" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            <p><a:question index="20" /></p>
+            <p>&nbsp;</p>  <!--  adds a blank line between questions. -->
+            </td>
+            </tr>
+            </tbody>
+        </table>
+            <!-- Assessment Quiz -->
+</div> 
+    <!-- js functions -->
+    <script>
+       function checkInputs(){
+            const answerNumber = event.target.dataset.qs_count
+            const triesRemaining = event.target.dataset.error_counter
+            const selectorString = `quiz-answer${answerNumber}`
+            const selectorStringButton = `quiz-answer${answerNumber}btn`
+            const selectorStringAnswer = `quiz-answer-text${answerNumber}`
+            const quizTwoAnswer = document.getElementById(selectorString);
+            const quizTwoAnswerButton = document.getElementById(selectorStringButton)
+            const quizTwoAnswerText = document.getElementById(selectorStringAnswer)
+            const answer = quizTwoAnswer.getAttribute('data-ans')
+            // const answer2 = quizTwoAnswer.getAttribute('data-ans2')
+            // const answer3 = quizTwoAnswer.getAttribute('data-ans3')
+            const userAnswer = quizTwoAnswer.value.toLowerCase()
+            const correctAnswer = userAnswer === answer.toLowerCase() ? true : false
+            const backToGlow = (quizTwoAnswer, quizTwoAnswerButton) => {
+                quizTwoAnswerButton.classList.remove("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover-wrong")
+                quizTwoAnswerButton.classList.add('glow-on-hover')
+                quizTwoAnswerButton.innerText = 'Check'
+            }
+            if(correctAnswer){
+                quizTwoAnswer.classList.remove("is-invalid")
+                quizTwoAnswer.classList.add("is-valid")
+                quizTwoAnswerButton.innerText = 'Correct!'
+                quizTwoAnswerButton.classList.add("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover")
+                quizTwoAnswerButton.classList.remove('glow-on-hover-wrong')
+                quizTwoAnswerText.classList.remove('bg-danger')
+                quizTwoAnswerText.classList.add('bg-success')
+            } else {
+                quizTwoAnswerText.classList.remove('bg-success') 
+                quizTwoAnswerText.classList.add('bg-danger')
+                quizTwoAnswer.classList.remove("is-valid")
+                quizTwoAnswer.classList.add("is-invalid")
+                quizTwoAnswerButton.classList.remove("glow-on-hover-success")
+                quizTwoAnswerButton.classList.remove("glow-on-hover")
+                quizTwoAnswerButton.classList.add('glow-on-hover-wrong')
+                quizTwoAnswerButton.innerText = 'Wrong'
+                setTimeout(() => backToGlow(quizTwoAnswer,quizTwoAnswerButton), 1500);
+                let updateTries = ''
+                if(quizTwoAnswerButton.getAttribute('data-error_counter') == 0){
+                    updateTries = 0;
+                } else {
+                    updateTries = Number(triesRemaining) - 1;
+                }
+                document.getElementById(selectorStringButton).setAttribute('data-error_counter', updateTries)
+                if(quizTwoAnswerButton.getAttribute('data-error_counter') == 0 ){
+                    quizTwoAnswerText.innerHTML = `Answer: ${quizTwoAnswer.getAttribute('data-ans')}`
+                    quizTwoAnswerText.classList.remove('hidden')
+                }
+            }
+        }
+        const container14 = document.querySelector(".lesson_7")
+        const practiceTwoChoiceContainer14 = document.querySelectorAll(".answer-container")
+            practiceTwoChoiceContainer14.forEach((elem) => {
+                elem.addEventListener("dragover", (event) => {
+                event.preventDefault()
+                })
+                
+                elem.addEventListener("drop", (event) => {
+                event.preventDefault()
+                const src14 = document.getElementById(event.dataTransfer.getData("src"))
+                const srcParent14 = src14.parentNode
+                const tgt14 = event.currentTarget.firstElementChild
+
+                event.currentTarget.replaceChild(src14, tgt14)
+                srcParent14.appendChild(tgt14)
+
+                container14.querySelector('.practice-1-result').classList.add('d-flex')
+
+                const correctAnswers14 = ["1", "2", "3", "4","5","6","7","8","9"].toString()
+                
+                const currentAnswerOrder14 = [].slice.call(container14.querySelectorAll('.practice-1-answer')).map((elem) => elem.id).toString()
+                
+                check(correctAnswers14, currentAnswerOrder14, '.practice-1-result')
+                
+                })
+
+                elem.querySelector('.practice-1-answer').addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("src", event.target.id)
+                })
+            })
+
+             function check(correctAnswers14, currentAnswerOrder14, resultElem14) {
+                if (correctAnswers14 === currentAnswerOrder14) {
+                    document.querySelector(resultElem14).innerHTML = 'Great Job! <span class="material-icons fs-1">verified</span>'
+                    document.querySelector(resultElem14).style.background = '#d4edda'
+                    document.querySelector(resultElem14).style.color = '#198754'
+                } else {
+                    document.querySelector(resultElem14).innerHTML = 'Try Again! <span class="material-icons fs-1">cancel</span>'
+                    document.querySelector(resultElem14).style.background = 'none'
+                    document.querySelector(resultElem14).style.color = '#434343'
+                }
+            }
+    </script>
+</body>
+</html>
